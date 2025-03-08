@@ -18,7 +18,7 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: 18.217.97.15
-          username: ubuntu  # Change if using a different user
+          username: root  # Change if using a different user
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /node-app/node-app
