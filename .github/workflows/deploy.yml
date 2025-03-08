@@ -20,7 +20,7 @@ jobs:
           username: ubuntu  # Change if using a different user
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /var/www/nodejs-deploy
+            cd /node-app/node-app
             git pull origin main
             npm install
             pm2 restart node-app
